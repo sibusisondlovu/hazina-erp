@@ -30,30 +30,39 @@
                         android:layout_height="wrap_content"/>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/activity_new_order_tilCustomerName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:inputType="text"
+                            android:maxLength="25"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="Name and Surname" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/activity_new_order_tilContactNumber"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:inputType="phone"
+                            android:maxLength="10"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="Contact Number" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/activity_new_order_tilEmailAddress"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:maxLength="30"
+                            android:inputType="textEmailAddress"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="Email Address" />
@@ -82,60 +91,74 @@
                         android:layout_height="wrap_content"/>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/activity_new_order_tilStyle"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:inputType="text"
+                            android:maxLength="15"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="Style" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/activity_new_order_tilFittingDate"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:inputType="date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Fitting Date" />
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="Fitting Date" />
+                            android:hint="Order Total Cost"
+                            android:inputType="numberDecimal" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/activity_new_order_tilCollectionDate"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:inputType="date"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="Collection Date" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/activity_new_order_tilTotalCost"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:hint="Order Total Cost" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/activity_new_order_tilDepositPaid"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:inputType="numberDecimal"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="Deposit Paid" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/activity_new_order_tilBalance"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:inputType="numberDecimal"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:hint="Outstanding Balance" />
